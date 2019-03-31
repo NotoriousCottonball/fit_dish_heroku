@@ -1,0 +1,34 @@
+<div class="info">
+
+    <h1 class="display-5 font-weight-bold">Fit Dish</h1>
+    <h6 class="mb-3 font-weight-light">Your Healthy Eating Companion </h6>
+    <img id="mainEmoji" class="d-block mx-auto my-2" src="/FitDish.png">
+    <h3 class="my-3 font-weight-bold"><%= submit %></h3>
+
+
+      <%= form_for user do |f| %>
+
+            <div class="form-group">
+               <%=f.label :username %><br>
+               <%=f.text_field :username, placeholder: "Username", class: "form-control-lg" %>
+            </div>
+            <div class="form-group">
+               <%=f.label :email %><br>
+               <%=f.text_field :email, placeholder: "Email", class: "form-control-lg" %>
+            </div>
+            <div class="form-row mb-2">
+              <div class="form-group col-md-6">
+                 <%=f.label :password %><br>
+                 <%=f.password_field :password, placeholder: "Password", class: "form-control-lg" %>
+              </div>
+              <div class="form-group col-md-6">
+                 <%=f.label :password_confirmation, "Confirm Password" %><br>
+                 <%=f.password_field :password_confirmation, placeholder: "Password", class: "form-control-lg"%>
+              </div>
+          </div>
+
+            <%= f.submit submit, class: "btn btn-success btn-lg" %>
+
+      <% end %>
+
+</div>

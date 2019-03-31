@@ -1,0 +1,16 @@
+<div class="center">
+      <%= render partial: "layouts/show_errors", locals: {model: @user} %>
+      <%= render partial: 'form', locals: {user: @user, submit: "Sign Up!"} %> <br>
+
+      <hr class="style">
+
+      <div class="d-inline-block">
+          <div class="info align-top">
+            <h5>Already have an account?</h5>
+            <a class="btn btn-primary btn-md " href="<%= login_path %>" role="button">Log In</a>
+          </div>
+
+          <h4 class="info align-top"><%= link_to('<span class="white-link">Log in with Facebook </span><i class="fab fa-facebook-square"></i>'.html_safe, '/auth/facebook') %></h4>
+      </div>
+
+</div>

@@ -1,0 +1,193 @@
+body, html {
+   height: 100%;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+ }
+
+ .bg {
+   background-image: linear-gradient(black, transparent), url(healthydiet.jpg);
+   height: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   overflow: scroll;
+ }
+
+ #mainEmoji {
+    width: 80px;
+    height: 70px;
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+    filter: drop-shadow(2px 2px 2px green);
+}
+
+.navbar-expand-lg .navbar-brand {
+    font-size: 30px;
+    margin-right: 50px;
+    color: #43709D;
+}
+
+.navbar-nav > li > a {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+hr.style {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+ /* lists */
+
+ ul li a, ol li a {
+   color: rgb(253,193,57);
+ }
+
+ ol {
+   padding-left: 0;
+   list-style-position: inside;
+ }
+
+ ul {
+   list-style-type: none;
+   padding-left: 0 ;
+ }
+
+ /* links */
+
+ .nav-link {
+   color: rgb(41,162,182);
+ }
+
+ .red-link {
+   color: rgb(216,54,72);
+ }
+
+ .white-link, .white-link:visited  {
+   color: white;
+ }
+
+ .white-link:hover, .white-link:active {
+   color: whitesmoke;
+   background-color: rgb(60,90,153);
+}
+
+ .yellow-link {
+   color: rgb(253,193,57);
+   font-weight: bold;
+ }
+
+ /* errors */
+
+ .field_with_errors {
+   color: rgb(216,54,72);
+ }
+ /*To override and wrap in spans instead of divs place the following in your environment.rb:
+ ActionView::Base.field_error_proc = Proc.new { |html_tag, instance| "<span class=\"fieldWithErrors\">#{html_tag}</span>" }*/
+
+ span.field_with_errors input[type] {
+   border: 2px solid red;
+}
+
+ .error_message {
+   color: rgb(216,54,72);
+ }
+
+
+ /* text */
+
+
+.list-group {
+  margin: 10px;
+}
+
+.list-group-item {
+  background: #e0ddd5;
+  color: #171e42;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+ .notes {
+   background-color :#f5f5f5;
+   display: inline-block;
+   padding: 20px;
+   margin: 10px;
+ }
+
+ .notes_b {
+   display: inline-block;
+   background-color :rgba(209, 244, 237, .85);
+   padding: 20px;
+   margin: 10px;
+ }
+
+
+ .list {
+  list-style: square inside;
+  color: #474a51;
+  padding: 0px;
+  border: 1px solid #dedede;
+}
+
+.list li {
+  border-bottom: 1px dotted #ccc;
+  height: auto;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+.list li:hover {
+  background-color: rgba(0, 0, 0, .1);
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+}
+
+.list_b {
+ list-style: disc inside;
+ color: #474a51;
+ padding: 0px;
+}
+
+.list_b li {
+  height: auto;
+  padding: 5px 5px;
+  text-transform: capitalize;
+}
+.list_b li:hover {
+  background-color: rgba(0, 0, 0, .1);
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+}
+
+ .info {
+   padding: 20px;
+   display: inline-block;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 7px;
+   vertical-align: middle;
+   margin: 10px;
+ }
+
+
+ .yellow-text {
+   color: rgb(253,193,57) ;
+   font-weight: bold;
+ }
+
+ .red-text {
+   color: rgb(216,54,72);
+ }
+
+ .invert {
+   filter: invert(50%);
+ }
+
+
+ .center {
+    text-align: center;
+  }
