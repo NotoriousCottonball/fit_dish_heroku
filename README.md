@@ -24,7 +24,8 @@ This is a Rails App made by George Pianka for Flatiron School Final Project Sect
 ##### *Navigate to http://localhost:3000/ after Setting Up Facebook OmniAuth as per https://github.com/mkdynamic/omniauth-facebook.*
 #### 2. HTTPS (SSL)
 `$ thin start --ssl`
-##### *Create a self signed certificate*
+##### *Create a self-signed certificate and Uncomment `config.force_ssl = true` in application.rb*
+##### *-or- Navigate to https://localhost:3000/ and Proceed Past NET::ERR_CERT_AUTHORITY_INVALID*
 
 ---
 
