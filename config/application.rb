@@ -40,7 +40,8 @@ module FitDish
     #Valid OAuth Redirect URIs
     # https://0.0.0.0:3000/auth/facebook/callback
     # https://localhost:3000/auth/facebook/callback
-
+    # https://evening-cliffs-19162.herokuapp.com/auth/facebook/callback
+    
     # bundle exec thin start --ssl
 
     # Settings in config/environments/* take precedence over those specified here.
